@@ -62,6 +62,14 @@ ul{
     font-style: italic;
 }
 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .banner-img img{
     position: relative;
@@ -286,7 +294,141 @@ span{
     color: black;
 }
 
+/* Sponsors & Partners Section */
+.sponsors-section{
+    background-color: #F8F9FC;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
 
+.sponsors-heading h1{
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.sponsors-heading p{
+    color: rgb(87, 87, 87);
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    font-size: 16px;
+}
+
+.sponsor-category{
+    margin-bottom: 50px;
+}
+
+.sponsor-category h4{
+    color: rgb(37, 99, 235);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sponsor-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.sponsor-grid.platinum .sponsor-card{
+    width: 280px;
+    padding: 40px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.sponsor-card{
+    background-color: white;
+    border: 2px solid rgb(229, 231, 235);
+    border-radius: 16px;
+    padding: 25px 35px;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sponsor-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: rgb(37, 99, 235);
+}
+
+.sponsor-card p{
+    font-weight: 600;
+    color: rgb(55, 65, 81);
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.sponsor-cta{
+    margin-top: 70px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsor-cta h2{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.sponsor-cta p{
+    color: rgb(87, 87, 87);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.sponsor-btn{
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sponsor-btn:hover{
+    background-color: #1a3fc2;
+}
+
+
+@media (max-width: 900px){
+    .sponsor-card{
+        width: 160px;
+        padding: 20px 25px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .sponsors-heading h1{
+        font-size: 32px;
+    }
+
+    .sponsor-card{
+        width: 42%;
+        padding: 18px 15px;
+    }
+
+    .sponsor-grid.platinum .sponsor-card{
+        width: 80%;
+    }
+
+    .sponsor-cta h2{
+        font-size: 24px;
+    }
+}
 
 
 
