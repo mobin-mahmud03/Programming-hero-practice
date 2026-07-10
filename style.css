@@ -3,11 +3,13 @@
     padding: 0;
 }
 
-.container{
+body{
     width: 100%;
-    max-width: 1551px;
+    max-width: 1600px;
     margin: 0 auto;
-}  
+    justify-content: center;
+    align-items: center;
+}
 
 nav{
     
@@ -132,10 +134,11 @@ ul{
 
 .speakers{
     display: grid;
-    grid-template-columns: repeat(2, 0.4fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
+    
   
 }
 
@@ -145,7 +148,7 @@ ul{
     border: 2px solid rgb(229, 231, 235);
     border-radius: 10px;
     width: fit-content;
-    margin: 60px 0;
+    margin: 60px auto;
     font-family: sans-serif;
 }
 
@@ -294,7 +297,7 @@ span{
     color: black;
 }
 
-/* Sponsors & Partners Section */
+
 .sponsors-section{
     background-color: #F8F9FC;
     padding: 80px 20px;
